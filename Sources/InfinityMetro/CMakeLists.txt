@@ -25,10 +25,10 @@ set(infinity_metro_header_gen_py ${root_dir}/Scripts/header_gen.py)
 add_custom_command(
     COMMAND python ${infinity_metro_header_gen_py}
     DEPENDS ${headers}
-    OUTPUT ${root_dir}/Includes/baba-is-auto.hpp
+    OUTPUT ${root_dir}/Includes/InfinityMetro.hpp
 )
 add_custom_target(infinity_metro_header_gen_py ALL
-    DEPENDS ${root_dir}/Includes/baba-is-auto.hpp)
+    DEPENDS ${root_dir}/Includes/InfinityMetro.hpp)
 
 # Build library
 add_library(${target}
