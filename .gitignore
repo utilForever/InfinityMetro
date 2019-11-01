@@ -32,4 +32,4 @@ cmake-build-debug
 *.pyc
 /.pytest_cache
 
-_build/
+_book/
