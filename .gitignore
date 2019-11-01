@@ -33,3 +33,5 @@ cmake-build-debug
 /.pytest_cache
 
 _book/
+
+gitbook_build.sh
