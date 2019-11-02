@@ -33,3 +33,4 @@ cmake-build-debug
 /.pytest_cache
 
 _book/
+/doctest/
