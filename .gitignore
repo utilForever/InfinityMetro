@@ -35,3 +35,5 @@ cmake-build-debug
 _book/
 
 gitbook_build.sh
+
+/doctest/

@@ -1,36 +1,36 @@
-
 <!DOCTYPE HTML>
 <html lang="">
 <head>
     <meta charset="UTF-8">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <title>Introduction · GitBook</title>
+    <title>Coding Guide · GitBook</title>
     <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
     <meta content="" name="description">
     <meta content="GitBook 3.2.3" name="generator">
 
 
-    <link href="gitbook/style.css" rel="stylesheet">
+    <link href="../gitbook/style.css" rel="stylesheet">
 
 
-    <link href="gitbook/gitbook-plugin-highlight/website.css" rel="stylesheet">
+    <link href="../gitbook/gitbook-plugin-highlight/website.css" rel="stylesheet">
 
 
-    <link href="gitbook/gitbook-plugin-search/search.css" rel="stylesheet">
+    <link href="../gitbook/gitbook-plugin-search/search.css" rel="stylesheet">
 
 
-    <link href="gitbook/gitbook-plugin-fontsettings/website.css" rel="stylesheet">
+    <link href="../gitbook/gitbook-plugin-fontsettings/website.css" rel="stylesheet">
 
 
     <meta content="true" name="HandheldFriendly"/>
     <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
-    <link href="gitbook/images/apple-touch-icon-precomposed-152.png" rel="apple-touch-icon-precomposed" sizes="152x152">
-    <link href="gitbook/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="../gitbook/images/apple-touch-icon-precomposed-152.png" rel="apple-touch-icon-precomposed"
+          sizes="152x152">
+    <link href="../gitbook/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
 
-    <link href="Documentation/coding-guide.html" rel="next"/>
+    <link href="../" rel="prev"/>
 
 
 </head>
@@ -51,9 +51,9 @@
             <ul class="summary">
 
 
-                <li class="chapter active" data-level="1.1" data-path="./">
+                <li class="chapter " data-level="1.1" data-path="../">
 
-                    <a href="./">
+                    <a href="../">
 
 
                         Introduction
@@ -63,9 +63,9 @@
 
                 </li>
 
-                <li class="chapter " data-level="1.2" data-path="Documentation/coding-guide.html">
+                <li class="chapter active" data-level="1.2" data-path="coding-guide.html">
 
-                    <a href="Documentation/coding-guide.html">
+                    <a href="coding-guide.html">
 
 
                         Coding Guide
@@ -102,7 +102,7 @@
                 <!-- Title -->
                 <h1>
                     <i class="fa fa-circle-o-notch fa-spin"></i>
-                    <a href=".">Introduction</a>
+                    <a href="..">Coding Guide</a>
                 </h1>
             </div>
 
@@ -115,7 +115,26 @@
 
                             <section class="normal markdown-section">
 
-                                <h1 id="introduction">Introduction</h1>
+                                <h1 id="c-coding-style">C++ Coding Style</h1>
+                                <p>For C++ files (<em>.cpp and </em>.h) we use clang-format to ensure code
+                                    styling. After changing or adding any Cpp or H file you need to reformat
+                                    the code before merging into the master branch. This script will ensure
+                                    that all native code files adhere to the coding style guidelines.</p>
+                                <h2 id="using-clang-format-in-clion">Using clang-format in CLion</h2>
+                                <p>You can configure clang-format in CLion IDE simply by clicking the
+                                    <code>Indent</code> button on the right bottom location. Then, select <code>Enable
+                                        ClangFormat with clangd server</code>. Done!</p>
+                                <p>If you want to reformat code automatically before commit, you can easily
+                                    enable it in <code>Settings&gt;Version Control&gt;Commit Dialog</code>. Just enable
+                                    <code>Reformat Code</code>.</p>
+                                <h2 id="coding-rules">Coding Rules</h2>
+                                <ol>
+                                    <li>We use <code>PascalCase</code> to name all our class names.</li>
+                                    <li>We use <code>camelCase</code> to name all our function names.</li>
+                                    <li>We use <code>snake_case</code> to name all our local variables and fields. For
+                                        constant variables and fields we use <code>SNAKE_CASE</code>.
+                                    </li>
+                                </ol>
 
 
                             </section>
@@ -144,9 +163,8 @@
         </div>
 
 
-        <a aria-label="Next page: Coding Guide" class="navigation navigation-next navigation-unique"
-           href="Documentation/coding-guide.html">
-            <i class="fa fa-angle-right"></i>
+        <a aria-label="Previous page: Introduction" class="navigation navigation-prev navigation-unique" href="../">
+            <i class="fa fa-angle-left"></i>
         </a>
 
 
@@ -157,15 +175,15 @@
         gitbook.push(function () {
             gitbook.page.hasChanged({
                 "page": {
-                    "title": "Introduction",
-                    "level": "1.1",
+                    "title": "Coding Guide",
+                    "level": "1.2",
                     "depth": 1,
-                    "next": {
-                        "title": "Coding Guide",
-                        "level": "1.2",
+                    "previous": {
+                        "title": "Introduction",
+                        "level": "1.1",
                         "depth": 1,
-                        "path": "Documentation/coding-guide.md",
-                        "ref": "Documentation/coding-guide.md",
+                        "path": "README.md",
+                        "ref": "README.md",
                         "articles": []
                     },
                     "dir": "ltr"
@@ -224,9 +242,13 @@
                         "print": "styles/print.css"
                     }
                 },
-                "file": {"path": "README.md", "mtime": "2019-11-02T11:13:50.343Z", "type": "markdown"},
+                "file": {
+                    "path": "Documentation/coding-guide.md",
+                    "mtime": "2019-11-02T11:14:43.152Z",
+                    "type": "markdown"
+                },
                 "gitbook": {"version": "3.2.3", "time": "2019-11-02T11:18:49.224Z"},
-                "basePath": ".",
+                "basePath": "..",
                 "book": {"language": ""}
             });
         });
@@ -234,26 +256,26 @@
 </div>
 
 
-<script src="gitbook/gitbook.js"></script>
-<script src="gitbook/theme.js"></script>
+<script src="../gitbook/gitbook.js"></script>
+<script src="../gitbook/theme.js"></script>
 
 
-<script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
 
 
-<script src="gitbook/gitbook-plugin-search/search.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
 
 
-<script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
 
 
-<script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
 
 
-<script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
 
 
-<script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
 
 
 </body>

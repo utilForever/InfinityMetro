@@ -20,9 +20,76 @@
       "store": {
         "./": [
           "introduct"
+        ],
+        "Documentation/coding-guide.html": [
+          "(.cpp",
+          ".h)",
+          "ad",
+          "adher",
+          "automat",
+          "befor",
+          "bottom",
+          "branch.",
+          "button",
+          "c++",
+          "camelcas",
+          "chang",
+          "clang",
+          "clangd",
+          "clangformat",
+          "class",
+          "click",
+          "clion",
+          "code",
+          "code.",
+          "commit,",
+          "configur",
+          "constant",
+          "control>commit",
+          "cpp",
+          "dialog.",
+          "done!",
+          "easili",
+          "enabl",
+          "ensur",
+          "field",
+          "fields.",
+          "file",
+          "format",
+          "function",
+          "guid",
+          "guidelines.",
+          "h",
+          "id",
+          "indent",
+          "local",
+          "location.",
+          "master",
+          "merg",
+          "name",
+          "names.",
+          "nativ",
+          "need",
+          "pascalcas",
+          "reformat",
+          "right",
+          "rule",
+          "script",
+          "select",
+          "server.",
+          "settings>vers",
+          "simpli",
+          "snake_cas",
+          "snake_case.",
+          "style",
+          "styling.",
+          "then,",
+          "us",
+          "variabl",
+          "want"
         ]
       },
-      "length": 1
+      "length": 2
     },
     "tokenStore": {
       "root": {
@@ -56,14 +123,1274 @@
                   }
                 }
               }
+            },
+            "d": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "Documentation/coding-guide.html": {
+                        "ref": "Documentation/coding-guide.html",
+                        "tf": 0.010638297872340425
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "d": {
+            "docs": {
+              "Documentation/coding-guide.html": {
+                "ref": "Documentation/coding-guide.html",
+                "tf": 0.010638297872340425
+              }
+            }
+          }
+        },
+        "(": {
+          "docs": {},
+          ".": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "p": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.010638297872340425
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        ".": {
+          "docs": {},
+          "h": {
+            "docs": {},
+            ")": {
+              "docs": {
+                "Documentation/coding-guide.html": {
+                  "ref": "Documentation/coding-guide.html",
+                  "tf": 0.010638297872340425
+                }
+              }
+            }
+          }
+        },
+        "a": {
+          "docs": {},
+          "d": {
+            "docs": {
+              "Documentation/coding-guide.html": {
+                "ref": "Documentation/coding-guide.html",
+                "tf": 0.010638297872340425
+              }
+            },
+            "h": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "r": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.010638297872340425
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "m": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Documentation/coding-guide.html": {
+                          "ref": "Documentation/coding-guide.html",
+                          "tf": 0.010638297872340425
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "b": {
+          "docs": {},
+          "e": {
+            "docs": {},
+            "f": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "r": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.02127659574468085
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "m": {
+                    "docs": {
+                      "Documentation/coding-guide.html": {
+                        "ref": "Documentation/coding-guide.html",
+                        "tf": 0.010638297872340425
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "c": {
+                  "docs": {},
+                  "h": {
+                    "docs": {},
+                    ".": {
+                      "docs": {
+                        "Documentation/coding-guide.html": {
+                          "ref": "Documentation/coding-guide.html",
+                          "tf": 0.010638297872340425
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "Documentation/coding-guide.html": {
+                        "ref": "Documentation/coding-guide.html",
+                        "tf": 0.010638297872340425
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "c": {
+          "docs": {},
+          "+": {
+            "docs": {},
+            "+": {
+              "docs": {
+                "Documentation/coding-guide.html": {
+                  "ref": "Documentation/coding-guide.html",
+                  "tf": 0.02127659574468085
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "l": {
+                  "docs": {},
+                  "c": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "s": {
+                        "docs": {
+                          "Documentation/coding-guide.html": {
+                            "ref": "Documentation/coding-guide.html",
+                            "tf": 0.010638297872340425
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "h": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "g": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.010638297872340425
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "l": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "g": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.031914893617021274
+                    }
+                  },
+                  "d": {
+                    "docs": {
+                      "Documentation/coding-guide.html": {
+                        "ref": "Documentation/coding-guide.html",
+                        "tf": 0.010638297872340425
+                      }
+                    }
+                  },
+                  "f": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "r": {
+                        "docs": {},
+                        "m": {
+                          "docs": {},
+                          "a": {
+                            "docs": {},
+                            "t": {
+                              "docs": {
+                                "Documentation/coding-guide.html": {
+                                  "ref": "Documentation/coding-guide.html",
+                                  "tf": 0.010638297872340425
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "s": {
+                "docs": {},
+                "s": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.010638297872340425
+                    }
+                  }
+                }
+              }
+            },
+            "i": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "k": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.010638297872340425
+                    }
+                  }
+                }
+              },
+              "o": {
+                "docs": {},
+                "n": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.02127659574468085
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Documentation/coding-guide.html": {
+                    "ref": "Documentation/coding-guide.html",
+                    "tf": 5.074468085106383
+                  }
+                },
+                ".": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.010638297872340425
+                    }
+                  }
+                }
+              }
+            },
+            "m": {
+              "docs": {},
+              "m": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    ",": {
+                      "docs": {
+                        "Documentation/coding-guide.html": {
+                          "ref": "Documentation/coding-guide.html",
+                          "tf": 0.010638297872340425
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "n": {
+              "docs": {},
+              "f": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "g": {
+                    "docs": {},
+                    "u": {
+                      "docs": {},
+                      "r": {
+                        "docs": {
+                          "Documentation/coding-guide.html": {
+                            "ref": "Documentation/coding-guide.html",
+                            "tf": 0.010638297872340425
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "s": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "n": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "Documentation/coding-guide.html": {
+                            "ref": "Documentation/coding-guide.html",
+                            "tf": 0.010638297872340425
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "t": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "o": {
+                    "docs": {},
+                    "l": {
+                      "docs": {},
+                      ">": {
+                        "docs": {},
+                        "c": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "m": {
+                              "docs": {},
+                              "m": {
+                                "docs": {},
+                                "i": {
+                                  "docs": {},
+                                  "t": {
+                                    "docs": {
+                                      "Documentation/coding-guide.html": {
+                                        "ref": "Documentation/coding-guide.html",
+                                        "tf": 0.010638297872340425
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "p": {
+            "docs": {},
+            "p": {
+              "docs": {
+                "Documentation/coding-guide.html": {
+                  "ref": "Documentation/coding-guide.html",
+                  "tf": 0.010638297872340425
+                }
+              }
+            }
+          }
+        },
+        "d": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "g": {
+                    "docs": {},
+                    ".": {
+                      "docs": {
+                        "Documentation/coding-guide.html": {
+                          "ref": "Documentation/coding-guide.html",
+                          "tf": 0.010638297872340425
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "!": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.010638297872340425
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "e": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "l": {
+                  "docs": {},
+                  "i": {
+                    "docs": {
+                      "Documentation/coding-guide.html": {
+                        "ref": "Documentation/coding-guide.html",
+                        "tf": 0.010638297872340425
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "n": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "b": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.031914893617021274
+                    }
+                  }
+                }
+              }
+            },
+            "s": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "r": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.02127659574468085
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "f": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "d": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.010638297872340425
+                    }
+                  },
+                  "s": {
+                    "docs": {},
+                    ".": {
+                      "docs": {
+                        "Documentation/coding-guide.html": {
+                          "ref": "Documentation/coding-guide.html",
+                          "tf": 0.010638297872340425
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "l": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Documentation/coding-guide.html": {
+                    "ref": "Documentation/coding-guide.html",
+                    "tf": 0.031914893617021274
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "m": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "Documentation/coding-guide.html": {
+                        "ref": "Documentation/coding-guide.html",
+                        "tf": 0.031914893617021274
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "n": {
+                        "docs": {
+                          "Documentation/coding-guide.html": {
+                            "ref": "Documentation/coding-guide.html",
+                            "tf": 0.010638297872340425
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "g": {
+          "docs": {},
+          "u": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "d": {
+                "docs": {
+                  "Documentation/coding-guide.html": {
+                    "ref": "Documentation/coding-guide.html",
+                    "tf": 5
+                  }
+                },
+                "e": {
+                  "docs": {},
+                  "l": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "s": {
+                            "docs": {},
+                            ".": {
+                              "docs": {
+                                "Documentation/coding-guide.html": {
+                                  "ref": "Documentation/coding-guide.html",
+                                  "tf": 0.010638297872340425
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "h": {
+          "docs": {
+            "Documentation/coding-guide.html": {
+              "ref": "Documentation/coding-guide.html",
+              "tf": 0.010638297872340425
+            }
+          }
+        },
+        "l": {
+          "docs": {},
+          "o": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.010638297872340425
+                    }
+                  }
+                },
+                "t": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        ".": {
+                          "docs": {
+                            "Documentation/coding-guide.html": {
+                              "ref": "Documentation/coding-guide.html",
+                              "tf": 0.010638297872340425
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "m": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "Documentation/coding-guide.html": {
+                        "ref": "Documentation/coding-guide.html",
+                        "tf": 0.010638297872340425
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "g": {
+                "docs": {
+                  "Documentation/coding-guide.html": {
+                    "ref": "Documentation/coding-guide.html",
+                    "tf": 0.010638297872340425
+                  }
+                }
+              }
+            }
+          }
+        },
+        "n": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Documentation/coding-guide.html": {
+                    "ref": "Documentation/coding-guide.html",
+                    "tf": 0.031914893617021274
+                  }
+                },
+                "s": {
+                  "docs": {},
+                  ".": {
+                    "docs": {
+                      "Documentation/coding-guide.html": {
+                        "ref": "Documentation/coding-guide.html",
+                        "tf": 0.02127659574468085
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "t": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "v": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.010638297872340425
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "d": {
+                "docs": {
+                  "Documentation/coding-guide.html": {
+                    "ref": "Documentation/coding-guide.html",
+                    "tf": 0.010638297872340425
+                  }
+                }
+              }
+            }
+          }
+        },
+        "p": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "l": {
+                    "docs": {},
+                    "c": {
+                      "docs": {},
+                      "a": {
+                        "docs": {},
+                        "s": {
+                          "docs": {
+                            "Documentation/coding-guide.html": {
+                              "ref": "Documentation/coding-guide.html",
+                              "tf": 0.010638297872340425
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "r": {
+          "docs": {},
+          "e": {
+            "docs": {},
+            "f": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "m": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "Documentation/coding-guide.html": {
+                            "ref": "Documentation/coding-guide.html",
+                            "tf": 0.031914893617021274
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "g": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.010638297872340425
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Documentation/coding-guide.html": {
+                    "ref": "Documentation/coding-guide.html",
+                    "tf": 0.010638297872340425
+                  }
+                }
+              }
+            }
+          }
+        },
+        "s": {
+          "docs": {},
+          "c": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "p": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "Documentation/coding-guide.html": {
+                        "ref": "Documentation/coding-guide.html",
+                        "tf": 0.010638297872340425
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "c": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "Documentation/coding-guide.html": {
+                        "ref": "Documentation/coding-guide.html",
+                        "tf": 0.010638297872340425
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "r": {
+              "docs": {},
+              "v": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    ".": {
+                      "docs": {
+                        "Documentation/coding-guide.html": {
+                          "ref": "Documentation/coding-guide.html",
+                          "tf": 0.010638297872340425
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "t": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "g": {
+                      "docs": {},
+                      "s": {
+                        "docs": {},
+                        ">": {
+                          "docs": {},
+                          "v": {
+                            "docs": {},
+                            "e": {
+                              "docs": {},
+                              "r": {
+                                "docs": {},
+                                "s": {
+                                  "docs": {
+                                    "Documentation/coding-guide.html": {
+                                      "ref": "Documentation/coding-guide.html",
+                                      "tf": 0.010638297872340425
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "l": {
+                  "docs": {},
+                  "i": {
+                    "docs": {
+                      "Documentation/coding-guide.html": {
+                        "ref": "Documentation/coding-guide.html",
+                        "tf": 0.010638297872340425
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "n": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "k": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "_": {
+                    "docs": {},
+                    "c": {
+                      "docs": {},
+                      "a": {
+                        "docs": {},
+                        "s": {
+                          "docs": {
+                            "Documentation/coding-guide.html": {
+                              "ref": "Documentation/coding-guide.html",
+                              "tf": 0.010638297872340425
+                            }
+                          },
+                          "e": {
+                            "docs": {},
+                            ".": {
+                              "docs": {
+                                "Documentation/coding-guide.html": {
+                                  "ref": "Documentation/coding-guide.html",
+                                  "tf": 0.010638297872340425
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "t": {
+            "docs": {},
+            "y": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "e": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.02127659574468085
+                    }
+                  }
+                },
+                "i": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "g": {
+                      "docs": {},
+                      ".": {
+                        "docs": {
+                          "Documentation/coding-guide.html": {
+                            "ref": "Documentation/coding-guide.html",
+                            "tf": 0.010638297872340425
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "t": {
+          "docs": {},
+          "h": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                ",": {
+                  "docs": {
+                    "Documentation/coding-guide.html": {
+                      "ref": "Documentation/coding-guide.html",
+                      "tf": 0.010638297872340425
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "u": {
+          "docs": {},
+          "s": {
+            "docs": {
+              "Documentation/coding-guide.html": {
+                "ref": "Documentation/coding-guide.html",
+                "tf": 0.06382978723404255
+              }
+            }
+          }
+        },
+        "v": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "b": {
+                    "docs": {},
+                    "l": {
+                      "docs": {
+                        "Documentation/coding-guide.html": {
+                          "ref": "Documentation/coding-guide.html",
+                          "tf": 0.02127659574468085
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "w": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "Documentation/coding-guide.html": {
+                    "ref": "Documentation/coding-guide.html",
+                    "tf": 0.010638297872340425
+                  }
+                }
+              }
             }
           }
         }
       },
-      "length": 1
+      "length": 66
     },
     "corpusTokens": [
-      "introduct"
+      "(.cpp",
+      ".h)",
+      "ad",
+      "adher",
+      "automat",
+      "befor",
+      "bottom",
+      "branch.",
+      "button",
+      "c++",
+      "camelcas",
+      "chang",
+      "clang",
+      "clangd",
+      "clangformat",
+      "class",
+      "click",
+      "clion",
+      "code",
+      "code.",
+      "commit,",
+      "configur",
+      "constant",
+      "control>commit",
+      "cpp",
+      "dialog.",
+      "done!",
+      "easili",
+      "enabl",
+      "ensur",
+      "field",
+      "fields.",
+      "file",
+      "format",
+      "function",
+      "guid",
+      "guidelines.",
+      "h",
+      "id",
+      "indent",
+      "introduct",
+      "local",
+      "location.",
+      "master",
+      "merg",
+      "name",
+      "names.",
+      "nativ",
+      "need",
+      "pascalcas",
+      "reformat",
+      "right",
+      "rule",
+      "script",
+      "select",
+      "server.",
+      "settings>vers",
+      "simpli",
+      "snake_cas",
+      "snake_case.",
+      "style",
+      "styling.",
+      "then,",
+      "us",
+      "variabl",
+      "want"
     ],
     "pipeline": [
       "stopWordFilter",
@@ -76,6 +1403,12 @@
       "title": "Introduction",
       "keywords": "",
       "body": "Introduction\n"
+    },
+    "Documentation/coding-guide.html": {
+      "url": "Documentation/coding-guide.html",
+      "title": "Coding Guide",
+      "keywords": "",
+      "body": "C++ Coding Style\nFor C++ files (.cpp and .h) we use clang-format to ensure code\nstyling. After changing or adding any Cpp or H file you need to reformat\nthe code before merging into the master branch. This script will ensure\nthat all native code files adhere to the coding style guidelines.\nUsing clang-format in CLion\nYou can configure clang-format in CLion IDE simply by clicking the\nIndent button on the right bottom location. Then, select Enable\nClangFormat with clangd server. Done!\nIf you want to reformat code automatically before commit, you can easily\nenable it in Settings>Version Control>Commit Dialog. Just enable\nReformat Code.\nCoding Rules\n\nWe use PascalCase to name all our class names.\nWe use camelCase to name all our function names.\nWe use snake_case to name all our local variables and fields. For\nconstant variables and fields we use SNAKE_CASE. \n\n"
     }
   }
 }
