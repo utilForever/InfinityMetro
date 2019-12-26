@@ -1,26 +1,59 @@
 @startuml
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
-
-List <|-- AbstractList
-Collection <|-- AbstractCollection
-
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-Object[] elementData
-size()
+class Train {
+    -Image image
+    -int type
+    -float velocity
+    -int max_person
+    -Route *route
+    -std::vector<Person*> people
+    -float location
+    -bool direction
+    -float transfer_time
+    -std::function<float(float)> position
+    -int trainCount
+    +void changeRoute(Route *route)
+    +void changeCount(int n)
 }
 
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
+class Person {
+    -Image image
+    -int destination
+    -Train *train
+    -int type
+}
+
+class Station {
+    -Image image
+    -std::pair<int, int> position
+    -int type
+    -std::vector<Person*> people
+    -int max_person
+    -float time_left
+}
+
+class Route {
+    -std::vector<Station*> stations
+    -std::vector<float> shape
+    -std::vector<Train*> trains
+    +void removeStation(int index)
+    +void addStation(int index, Station *s)
+    +void removeTrain(int index)
+    +void addTrain(int index, Train *train)
+}
+
+class Game {
+    -std::vector<Train*> trains
+    -std::vector<Person*> people
+    -std::vector<Route*> routes
+    -std::vector<Station*> stations
+    -float t
+    -int score
+    -int gameType
+    -Image image
+    -int mapType
+    +void init()
+    +void addTime(float t)
 }
 
 @enduml
