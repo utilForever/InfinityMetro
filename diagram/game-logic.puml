@@ -1,0 +1,74 @@
+@startuml
+
+class Train {
+    -Image image
+    -int type
+    -float velocity
+    -int max_person
+    -std::vector<Person*> people
+    -float location
+    -bool direction
+    -float transfer_time
+    -std::function<float(float)> position
+    -int trainCount
+    +int AddTime(float t)
+    +void ChangeCount(int n)
+    +void AddPerson(Person *person)
+    +void AddPeople(std::vector<Person *> person)
+    +void RemovePerson(Person *person)
+    +void RemovePeople(std::vector<Person *> person)
+}
+
+class Person {
+    -Image image
+    -int destination
+}
+
+class Station {
+    -Image image
+    -std::pair<int, int> position
+    -int type
+    -std::vector<Person*> people
+    -int max_person
+    -float time_left
+    +int AddTime(float t)
+    +void AddPerson(Person *person)
+    +void AddPeople(std::vector<Person *> person)
+    +void RemovePerson(Person *person)
+    +void RemovePeople(std::vector<Person *> person)
+}
+
+class Route {
+    -std::vector<Station*> stations
+    -std::vector<float> shape
+    -std::vector<Train*> trains
+    +void RemoveStation(int index)
+    +void AddStation(int index, Station *s)
+    +void RemoveTrain(Train *train)
+    +void AddTrain(Train *train)
+}
+
+class Game {
+    -std::vector<Train*> trains
+    -std::vector<Person*> people
+    -std::vector<Route*> routes
+    -std::vector<Station*> stations
+    -float t
+    -int score
+    -int gameType
+    -Image image
+    -int mapType
+    +void Init()
+    +int AddTime(float t)
+    +void AddRoute(Route *route)
+}
+
+Train::people --> Person
+Station::people --> Person
+Route::stations --> Station
+Game::trains --> Train
+Game::people --> Person
+Game::routes --> Route
+Game::stations --> Station
+
+@enduml

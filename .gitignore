@@ -1,14 +1,6 @@
-# CMake temp/cache files
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
-cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-build
+# Rust files
+target
+Cargo.lock
 
 # Visual Studio files
 /.vs
@@ -25,7 +17,6 @@ build
 cmake-build-debug
 
 # vi files
-.clang_complete
 .syntastic_cpp_config
 
 # Python files

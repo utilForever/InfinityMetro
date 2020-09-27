@@ -1,0 +1,23 @@
+[package]
+name = "infinity_metro"
+version = "0.1.0"
+authors = ["Chris Ohk <utilForever@gmail.com>"]
+edition = "2018"
+license = "MIT"
+repository = "https://github.com/utilForever/InfinityMetro"
+include = [
+    "src/**/*",
+    "Cargo.toml",
+    "README.md"
+]
+readme = "README.md"
+
+[dependencies]
+
+
+[features]
+default = []
+
+[[bin]]
+path = "src/main.rs"
+name = "hyeong"
