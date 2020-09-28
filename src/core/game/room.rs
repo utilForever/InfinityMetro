@@ -119,9 +119,11 @@ mod room_test {
     fn remove_test() {
         let mut room = Room::new();
 
-        room.add_person(Person::new(2, 2));
-        room.add_person(Person::new(1, 2));
-        room.add_person(Person::new(3, 2));
+        room.add_people(vec![
+            Person::new(2, 2),
+            Person::new(1, 2),
+            Person::new(3, 2),
+        ]);
 
         let v = room.get_all_people();
 
@@ -139,14 +141,35 @@ mod room_test {
     fn iter_test() {
         let mut room = Room::new();
 
-        room.add_person(Person::new(2, 2));
-        room.add_person(Person::new(1, 2));
-        room.add_person(Person::new(3, 2));
+        room.add_people(vec![
+            Person::new(2, 2),
+            Person::new(1, 2),
+            Person::new(3, 2),
+            Person::new(5, 2),
+            Person::new(4, 2),
+        ]);
+
+        room.remove_people(vec![4, 5]);
 
         for (i, p) in room.iter().enumerate() {
             assert_eq!(i + 1, p as usize);
             let r = room.get_person(p);
             assert_eq!(r.get_dest(), 2);
         }
+    }
+
+    #[test]
+    fn contains_test() {
+        let mut room = Room::new();
+
+        room.add_people(vec![
+            Person::new(2, 2),
+            Person::new(1, 2),
+            Person::new(3, 2),
+            Person::new(4, 2),
+        ]);
+
+        assert!(room.contains(3));
+        assert!(!room.contains(5));
     }
 }
