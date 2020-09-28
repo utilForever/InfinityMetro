@@ -31,3 +31,4 @@ cmake-build-debug
 # Python files
 *.pyc
 /.pytest_cache
+venv
