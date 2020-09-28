@@ -20,4 +20,4 @@ default = []
 
 [[bin]]
 path = "src/main.rs"
-name = "hyeong"
+name = "infinity_metro"
