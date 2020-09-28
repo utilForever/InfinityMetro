@@ -1,6 +1,6 @@
 use crate::core::game::person::Person;
-use std::collections::{ BTreeMap};
 use std::collections::btree_map;
+use std::collections::BTreeMap;
 use std::ops::Index;
 
 /// # Room
@@ -71,13 +71,13 @@ impl Room {
 
     fn iter(&self) -> Iter {
         Iter {
-            cur: self.people.iter()
+            cur: self.people.iter(),
         }
     }
 }
 
 pub struct Iter<'a> {
-    cur: btree_map::Iter<'a, u32, Person>
+    cur: btree_map::Iter<'a, u32, Person>,
 }
 
 impl<'a> Iterator for Iter<'a> {
