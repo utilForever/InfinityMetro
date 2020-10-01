@@ -1,4 +1,3 @@
-use crate::core::game::person::Person;
 use std::collections::btree_map;
 use std::collections::BTreeMap;
 use std::ops::Index;
@@ -9,67 +8,52 @@ use std::ops::Index;
 /// It uses `BTreeSet` for better performance.
 #[derive(Debug, Clone)]
 pub struct Room {
-    people: BTreeMap<u32, Person>,
+    people: BTreeMap<u32, u32>,
 }
 
 impl Room {
-    fn new() -> Room {
+    pub fn new() -> Room {
         Room {
             people: BTreeMap::new(),
         }
     }
 
-    fn len(&self) -> usize {
+    pub fn len(&self) -> usize {
         self.people.len()
     }
 
-    fn get_person(&self, id: u32) -> &Person {
-        self.people.index(&id)
+    pub fn get_people(&self, dest: u32) -> &u32 {
+        self.people.index(&dest)
     }
 
-    fn get_all_people(&self) -> Vec<u32> {
+    pub fn get_all_people(&self) -> Vec<u32> {
         let mut v = Vec::new();
-        v.reserve(self.people.len());
 
-        for (i, _) in &self.people {
-            v.push(*i);
+        for (dest, _) in &self.people {
+            v.push(*dest);
         }
 
         v
     }
 
-    fn add_person(&mut self, person: Person) {
-        self.people.insert(person.get_id(), person);
-    }
-
-    fn add_people(&mut self, people: Vec<Person>) {
-        for person in people {
-            self.add_person(person);
-        }
-    }
-
-    fn contains(&self, id: u32) -> bool {
-        self.people.contains_key(&id)
-    }
-
-    fn remove_person(&mut self, id: u32) -> Option<Person> {
-        self.people.remove(&id)
-    }
-
-    fn remove_people(&mut self, ids: Vec<u32>) -> Vec<Person> {
-        let mut v = Vec::new();
-        v.reserve(ids.len());
-
-        for id in ids {
-            if let Some(p) = self.remove_person(id) {
-                v.push(p);
+    pub fn add_people(&mut self, dest: u32, count: u32) {
+        match self.people.get_mut(&dest) {
+            Some(v) => *v += count,
+            None => {
+                self.people.insert(dest, count);
             }
         }
-
-        v
     }
 
-    fn iter(&self) -> Iter {
+    pub fn contains(&self, dest: u32) -> bool {
+        self.people.contains_key(&dest)
+    }
+
+    pub fn remove_people(&mut self, dest: u32) -> Option<u32> {
+        self.people.remove(&dest)
+    }
+
+    pub fn iter(&self) -> Iter {
         Iter {
             cur: self.people.iter(),
         }
@@ -77,7 +61,7 @@ impl Room {
 }
 
 pub struct Iter<'a> {
-    cur: btree_map::Iter<'a, u32, Person>,
+    cur: btree_map::Iter<'a, u32, u32>,
 }
 
 impl<'a> Iterator for Iter<'a> {
@@ -95,16 +79,15 @@ impl<'a> Iterator for Iter<'a> {
 
 #[cfg(test)]
 mod room_test {
-    use crate::core::game::person::Person;
-    use crate::core::game::room::Room;
+    use super::*;
 
     #[test]
     fn add_test() {
         let mut room = Room::new();
 
-        room.add_person(Person::new(2, 2));
-        room.add_person(Person::new(1, 2));
-        room.add_person(Person::new(3, 2));
+        room.add_people(2, 1);
+        room.add_people(1, 1);
+        room.add_people(3, 1);
 
         assert_eq!(room.len(), 3);
 
@@ -119,16 +102,14 @@ mod room_test {
     fn remove_test() {
         let mut room = Room::new();
 
-        room.add_people(vec![
-            Person::new(2, 2),
-            Person::new(1, 2),
-            Person::new(3, 2),
-        ]);
+        room.add_people(2, 1);
+        room.add_people(1, 1);
+        room.add_people(3, 1);
 
         let v = room.get_all_people();
 
-        let r = room.remove_person(v[1]);
-        assert_eq!(r, Some(Person::new(2, 2)));
+        let r = room.remove_people(v[1]);
+        assert_eq!(r, Some(1));
         assert_eq!(room.len(), 2);
 
         let v = room.get_all_people();
@@ -141,20 +122,19 @@ mod room_test {
     fn iter_test() {
         let mut room = Room::new();
 
-        room.add_people(vec![
-            Person::new(2, 2),
-            Person::new(1, 2),
-            Person::new(3, 2),
-            Person::new(5, 2),
-            Person::new(4, 2),
-        ]);
+        room.add_people(2, 1);
+        room.add_people(1, 1);
+        room.add_people(3, 1);
+        room.add_people(5, 1);
+        room.add_people(4, 1);
 
-        room.remove_people(vec![4, 5]);
+        room.remove_people(5);
+        room.remove_people(4);
 
         for (i, p) in room.iter().enumerate() {
             assert_eq!(i + 1, p as usize);
-            let r = room.get_person(p);
-            assert_eq!(r.get_dest(), 2);
+            let r = room.get_people(p);
+            assert_eq!(*r, 1);
         }
     }
 
@@ -162,12 +142,10 @@ mod room_test {
     fn contains_test() {
         let mut room = Room::new();
 
-        room.add_people(vec![
-            Person::new(2, 2),
-            Person::new(1, 2),
-            Person::new(3, 2),
-            Person::new(4, 2),
-        ]);
+        room.add_people(2, 1);
+        room.add_people(1, 1);
+        room.add_people(3, 1);
+        room.add_people(4, 1);
 
         assert!(room.contains(3));
         assert!(!room.contains(5));
