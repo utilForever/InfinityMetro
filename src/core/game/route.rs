@@ -16,6 +16,4 @@ impl<'a> Route<'a> {
 }
 
 #[cfg(test)]
-mod route_test {
-    use super::*;
-}
+mod route_test {}

@@ -29,8 +29,8 @@ impl Room {
     pub fn get_all_people(&self) -> Vec<u32> {
         let mut v = Vec::new();
 
-        for (dest, _) in &self.people {
-            v.push(*dest);
+        for i in self.people.keys() {
+            v.push(*i);
         }
 
         v

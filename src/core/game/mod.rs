@@ -15,6 +15,4 @@ pub struct Game<'a> {
 }
 
 #[cfg(test)]
-mod game_test {
-    use super::*;
-}
+mod game_test {}

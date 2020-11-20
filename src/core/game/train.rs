@@ -25,6 +25,4 @@ impl Train {
 }
 
 #[cfg(test)]
-mod train_test {
-    use super::*;
-}
+mod train_test {}

@@ -23,6 +23,4 @@ impl Station {
 }
 
 #[cfg(test)]
-mod station_test {
-    use super::*;
-}
+mod station_test {}
