@@ -31,7 +31,7 @@ impl Room {
         let mut v = Vec::new();
         v.reserve(self.people.len());
 
-        for (i, _) in &self.people {
+        for i in self.people.keys() {
             v.push(*i);
         }
 
