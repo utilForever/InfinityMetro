@@ -14,22 +14,18 @@ jobs:
           - build: stable
             os: ubuntu-latest
             rust: stable
-            browsers: --node --firefox --chrome
 
           - build: beta
             os: ubuntu-latest
             rust: beta
-            browsers: --node --firefox --chrome
 
           - build: nightly
             os: ubuntu-latest
             rust: nightly
-            browsers: --node --firefox --chrome
 
           - build: macos
             os: macos-latest
             rust: stable
-            browsers: --node --firefox --chrome --safari
 
     steps:
       - uses: actions/checkout@v2
