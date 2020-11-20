@@ -1,43 +1,86 @@
-name: CI
-on:
-  push:
-    branches:
-      - master
-  pull_request:
+name: build
+on: [ push, pull_request ]
 
 jobs:
-  test:
+  ci:
     name: Test
     runs-on: ${{ matrix.os }}
+
     strategy:
       matrix:
         build: [ stable, beta, nightly, macos ]
+
         include:
           - build: stable
             os: ubuntu-latest
             rust: stable
+            browsers: --node --firefox --chrome
+
           - build: beta
             os: ubuntu-latest
             rust: beta
+            browsers: --node --firefox --chrome
+
           - build: nightly
             os: ubuntu-latest
             rust: nightly
+            browsers: --node --firefox --chrome
+
           - build: macos
             os: macos-latest
             rust: stable
+            browsers: --node --firefox --chrome --safari
 
     steps:
-      - uses: actions/checkout@master
-      - name: Install Rust
-        run: bash ci/install-rust.sh ${{ matrix.rust }}
-      - name: Build and run tests
-        run: cargo test
+      - uses: actions/checkout@v2
 
-  rustfmt:
-    name: Rustfmt
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - name: Install Rust
-        run: rustup update stable && rustup default stable && rustup component add rustfmt
-      - run: cargo fmt -- --check
+      - name: Setting up rust
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: ${{ matrix.rust }}
+          override: true
+          components: rustfmt, clippy
+
+      - name: Checking if it builds without errors
+        uses: actions-rs/cargo@v1
+        with:
+          command: build
+          args: --all-targets
+
+      - name: Checking if test passes (Default feature)
+        uses: actions-rs/cargo@v1
+        with:
+          command: test
+
+      - name: Checking if test passes (All features)
+        uses: actions-rs/cargo@v1
+        with:
+          command: test
+          args: --all-features
+
+      - name: Checking if code is formatted
+        uses: actions-rs/cargo@v1
+        with:
+          command: fmt
+          args: --all -- --check
+
+      - name: Checking if it builds without warnings (Default feature)
+        uses: actions-rs/cargo@v1
+        with:
+          command: clippy
+          args: --all-targets -- -D warnings
+
+      - name: Checking if it builds without warnings (All features)
+        uses: actions-rs/cargo@v1
+        with:
+          command: clippy
+          args: --all-targets --all-features -- -D warnings
+
+      - name: Testing wasm
+        run: |
+          if [ -f "${HOME}/.cargo/bin/wasm-pack" ]; then
+            rm ${HOME}/.cargo/bin/wasm-pack
+          fi
+          curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+          cd public && wasm-pack test ${{ matrix.browsers }} --headless
